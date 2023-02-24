@@ -2,7 +2,7 @@ let osc = []
 let inp = []
 let oscvals = []
 let amp = .5;
-let howmany = 6;
+let howmany = 100;
 let playing = false;
 let sliders = []
 
@@ -13,7 +13,7 @@ function setup() {
     osc.push(new p5.Oscillator('sine'));
     oscvals.push(0);
     inp.push(createInput(''));
-    inp[i].position(windowWidth/2, (i+1) * windowHeight/10)
+    inp[i].position(windowWidth/2, (i+1) * windowHeight/(howmany+4))
     inp[i].size(100);
     inp[i].input(myInputEvent);
     // sliders[i] = createSlider(0,8000,0);
