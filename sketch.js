@@ -23,6 +23,15 @@ function setup() {
   button = createButton('play');
   button.position(windowWidth/2, windowHeight-100);
   button.mousePressed(playOsc);
+  c1 = color(200);
+  c2 = color(63, 191, 191);
+  
+  for(let y=0; y<height; y++){
+    n = map(y,0,height,0,1);
+    let newc = lerpColor(c1,c2,n);
+    stroke(newc);
+    line(0,y,width, y);
+  }
   text("joe eats ass", 100, 100)
 }
 
