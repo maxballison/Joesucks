@@ -2,7 +2,7 @@ let osc = []
 let inp = []
 let oscvals = []
 let amp = .5;
-let howmany = 100;
+let howmany = 10;
 let playing = false;
 let sliders = []
 
@@ -23,6 +23,7 @@ function setup() {
   button = createButton('play');
   button.position(windowWidth/2, windowHeight-100);
   button.mousePressed(playOsc);
+  text("joe eats ass", 100, 100)
 }
 
 function draw() {
