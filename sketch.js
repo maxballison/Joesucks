@@ -28,7 +28,7 @@ function setup() {
 function draw() {
   if (playing) {
     for (let t = 0; t < howmany; t++) {
-      let frequency = parseInt(inp[t].value())
+      let frequency = parseFloat(inp[t].value())
       if (!frequency) {
         frequency = 0;
       }
